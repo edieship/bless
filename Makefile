@@ -48,6 +48,6 @@ compile:
 
 lambda-deps:
 	@echo "--> Compiling lambda dependencies"
-	docker run --rm -it -v ${CURDIR}:/src -w /src amazonlinux make compile
+	docker run --rm -v ${CURDIR}:/src -w /src amazonlinux make compile
 
 .PHONY: develop dev-docs clean test lint coverage publish
